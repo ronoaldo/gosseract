@@ -4,7 +4,7 @@ package gosseract
 // #cgo LDFLAGS: -L/usr/local/lib -llept -ltesseract
 // #else
 // #cgo CXXFLAGS: -std=c++0x
-// #cgo LDFLAGS: -llept -ltesseract
+// #cgo LDFLAGS: -llept -ltesseract -lomp
 // #cgo CPPFLAGS: -Wno-unused-result
 // #endif
 // #include <stdlib.h>
