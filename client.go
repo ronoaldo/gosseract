@@ -4,9 +4,10 @@ package gosseract
 // #cgo LDFLAGS: -L/usr/local/lib -llept -ltesseract
 // #else
 // #cgo CXXFLAGS: -std=c++0x
-// #cgo LDFLAGS: -llept -ltesseract -lomp
+// #cgo LDFLAGS: -llept -ltesseract
 // #cgo CPPFLAGS: -Wno-unused-result
 // #endif
+// #cgo termux LDFLAGS: -lomp
 // #include <stdlib.h>
 // #include <stdbool.h>
 // #include "tessbridge.h"
