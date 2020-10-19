@@ -7,7 +7,7 @@ package gosseract
 // #cgo LDFLAGS: -llept -ltesseract
 // #cgo CPPFLAGS: -Wno-unused-result
 // #endif
-// #cgo termux LDFLAGS: -lomp
+// #cgo android LDFLAGS: -lomp
 // #include <stdlib.h>
 // #include <stdbool.h>
 // #include "tessbridge.h"
